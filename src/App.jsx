@@ -14,7 +14,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [favorites, setFavorites] = useState(() => {
     const savedFavorites = localStorage.getItem("favorites");
-    return savedFavorites ? JSON.parse(savedFavorites) : [];
+    return savedFavorites ? JSON.parse(savedFavorites) : []
   });
   const [selectedPokemon, setSelectedPokemon] = useState(null);
   // const { isAuthenticated, isLoading, user, loginWithRedirect, logout } = useAuth0();
@@ -121,7 +121,7 @@ function App() {
   return (
     
     <div className="container">
-      <button onClick={() => loginWithRedirect()}>Login</button>
+      
       <h1 className="title">Pokemon List</h1>
       <SearchBar searchText={searchText} handleSearch={handleSearch} />
       <FilterButtons
