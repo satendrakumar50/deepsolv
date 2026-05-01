@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import "./App.css";
-import PokemonList from "./components/PokemonList";
-import SearchBar from "./components/SearchBar";
-import FilterButtons from "./components/FilterButtons";
-import PokemonModal from "./components/PokemonModal";
+import PokemonList from "./Components/PokemonList";
+import SearchBar from "./Components/SearchBar";
+import FilterButtons from "./Components/FilterButtons";
+import PokemonModal from "./Components/PokemonModal";
 // import { useAuth0 } from "@auth0/auth0-react";
 
 function App() {
