@@ -117,16 +117,7 @@ function App() {
     });
   };
 
-     if (isAuthenticated) {
-      return (
-        <div className="container">
-          <h1 className="title">Welcome, {user.name}!</h1>
-          <button onClick={() => logout({ returnTo: window.location.origin })}>
-            Logout
-          </button>
-        </div>
-      );
-     }
+    
   return (
     
     <div className="container">
