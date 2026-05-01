@@ -4,7 +4,7 @@ import PokemonList from "./components/PokemonList";
 import SearchBar from "./components/SearchBar";
 import FilterButtons from "./components/FilterButtons";
 import PokemonModal from "./components/PokemonModal";
-import { useAuth0 } from "@auth0/auth0-react";
+// import { useAuth0 } from "@auth0/auth0-react";
 
 function App() {
   const [pokemon, setPokemon] = useState([]);
@@ -17,9 +17,9 @@ function App() {
     return savedFavorites ? JSON.parse(savedFavorites) : [];
   });
   const [selectedPokemon, setSelectedPokemon] = useState(null);
-  const { isAuthenticated, isLoading, user, loginWithRedirect, logout } = useAuth0();
+  // const { isAuthenticated, isLoading, user, loginWithRedirect, logout } = useAuth0();
 
-  console.log("wwwwwwwwwwwwwwwwww", isAuthenticated, isLoading, user);
+  // console.log("wwwwwwwwwwwwwwwwww", isAuthenticated, isLoading, user);
 
   const limit = 10;
   const pokemonTypes = [
